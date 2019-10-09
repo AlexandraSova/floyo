@@ -1,0 +1,122 @@
+:root {
+    --media: big;
+    --header-fixed-text-color: #000;
+    --header-scrolled-text-color: #575150;
+
+    --header-scrolled-big-color: rgba(255, 255, 255, 0.75);
+    --header-scrolled-small-color: rgba(174, 161, 161, 0.7);
+
+    --header-open-small-color:rgba(174, 161, 161, 0.9);
+    --header-open-small-text-color:#ffffffdb;
+
+    --header-fixed-color: transparent;
+    --a-hover-color: #9e8d84c7;
+
+    --large-font-size: calc(3vw + 0.3rem);
+    --medium_font_size:calc(1vw + 0.3rem);
+}
+
+a{
+    text-decoration: none;
+}
+a:hover
+{
+    color: var(--a-hover-color);
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+
+.main_img {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.header_fixed {
+    background-color: var(--header-fixed-color);
+    padding: 3rem;
+    color: var(--header-fixed-text-color);
+    position: relative;
+}
+
+.header_scrolled {
+    background-color: var(--header-scrolled-big-color);
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    color: var(--header-scrolled-text-color);
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.header_center
+{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub_menu_big
+{
+    display: none;
+    padding: 2rem 0 0 0;
+}
+
+.sub_menu_small
+{
+    display: none;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+    width: 100%;
+}
+.sub_menu_item_big
+{
+    padding: 3rem;
+    float: left;
+}
+.sub_menu_item_small
+{
+    padding: 1rem 0 1rem 0;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header_row
+{
+    position: relative;
+    padding: 1rem;
+}
+
+.header_left{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.header_right
+{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(0, -50%);
+}
+.home_big_text_container
+{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    text-align: center;
+    margin: -0.2rem;
+    transform: translate(-50%, -50%);
+}
+.close_menu
+{
+    display: none;
+}
+
+
